@@ -1,11 +1,10 @@
 # url = "bytebank.com/cambio?quantidade=100&moedaDestino=dolar&moedaOrigem=real"
 url = " "
 
-# Santização da URL ( tirando os espaços em brancos da URL)
-# replase é desde
-url = url.replace(" ", "")
+# Santização da URL
+url = url.strip()
 
-# caso a url esteja vazia
+# validação da URL
 if url == "":
     raise ValueError("A URL Está vazia")
 
