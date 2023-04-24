@@ -6,7 +6,7 @@ url = url.strip()
 
 # validação da URL
 if url == "":
-    raise ValueError("A URL Está vazia")
+    raise ValueError("A URL Está vazia!")
 
 
 # Separa base e parâmetros
